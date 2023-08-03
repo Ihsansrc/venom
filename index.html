@@ -1,355 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My Portofolio | Ihsan Abdul</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
-
-    <!-- bootsrap icon -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    />
-    <!-- akhir bootsrap -->
-
-    <!-- CSS -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body id="home">
-    <!-- navbar -->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark bg-primary shadow fixed-top"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="#">Ihsan Abdul</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#project">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact me</a>
-            </li>
-          </ul>
+  <body>
+    <div class="container">
+      <header>
+        <div class="hero">
+          <h1>MUGIWARA</h1>
+          <p style="font-weight: 600">NO LUFFY</p>
         </div>
-      </div>
-    </nav>
-    <!-- akhir navbar -->
+        <div class="feature picture-1">
+          <p class="price">IDR 140K</p>
+          <h3>Hoodie</h3>
+        </div>
+        <div class="feature picture-2">
+          <p class="price">IDR 200K</p>
+          <h3>Merch</h3>
+        </div>
+      </header>
 
-    <!-- jumbroton -->
-    <section class="jumbotron text-center">
-      <img
-        src="/bootsrap/img/gambar.png"
-        alt="gambar"
-        width="200px"
-        class="rounded-circle img-thumbnail"
-      />
-      <h1 class="display-4 fw-semibold">Ihsan Abdul</h1>
-      <p class="lead fw-normal">Pelajar | Programer | pengangguran</p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,96L48,122.7C96,149,192,203,288,197.3C384,192,480,128,576,106.7C672,85,768,107,864,106.7C960,107,1056,85,1152,90.7C1248,96,1344,128,1392,144L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- akhir jumbroton -->
+      <nav class="menu">
+        <div class="brand">
+          <h1>MUGIWARA NO LUFFY</h1>
+        </div>
+        <ul class="list">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">PRODUCT</a></li>
+          <li><a href="#">GALERY</a></li>
+        </ul>
+      </nav>
 
-    <!-- about us -->
-    <section id="about">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>About me</h2>
-          </div>
-        </div>
-        <div class="row justify-content-evenly fs-5 text-center">
-          <div class="col-md-5">
-            <p>
-              Saya adalah lulusan dari MA PERSIS TAROGONG dalam jurusan Ilmu
-              Agama Islam, meski gitu saya suka dalam bidang IT terutama
-              Programer dalam bidang Front-end Developer dan masih belajar
-              secara basic, memiliki keinginan yang kuat untuk belajar
-              sepertinya tergantung mood saya, kalo bagus ya belajar kalo pusing
-              malesin.
-            </p>
-          </div>
-          <div class="col-md-5">
-            <p>
-              saya belajar baru 2 bulan lebih dan inilah hasil nya cuma ya ada
-              beberapa project yang telah saya selesaikan dalam boothcamp yang
-              saya ikuti seperti PKS Digital School baru sekali nyoba dan semoga
-              saya pun dapat mengikuti boothcamp lainnya agar dapat mengasah
-              ilmu sayaaaa "arigato hatur nuhun wasalammm".
-            </p>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#e2edff"
-          fill-opacity="1"
-          d="M0,224L48,229.3C96,235,192,245,288,234.7C384,224,480,192,576,192C672,192,768,224,864,245.3C960,267,1056,277,1152,272C1248,267,1344,245,1392,234.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- akhir about -->
-
-    <!-- card -->
-    <section id="project">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>My Project</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-4 mb-3">
-            <a
-              href="https://ihsan-reactjs.netlify.app/"
-              style="text-decoration: none"
+      <section class="services">
+        <div class="service">
+          <div class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 448 512"
             >
-              <div class="card">
-                <img
-                  src="/bootsrap/img/project/iron.jpg"
-                  class="card-img-top"
-                  alt="project"
-                />
-                <div class="card-body">
-                  <p class="card-text">
-                    membuat project berupa loker dalam pelatihan PKS DIGITAL
-                    SCHOOL dalma 2 bulan dan masih dalam tahap berkembang.
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img
-                src="/bootsrap/img/project/nft.jpg"
-                class="card-img-top"
-                alt="project"
+              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <style>
+                svg {
+                  fill: #dd0a97;
+                }
+              </style>
+              <path
+                d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"
               />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
+            </svg>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img
-                src="/bootsrap/img/project/keyboard.jpg"
-                class="card-img-top"
-                alt="project"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img
-                src="/bootsrap/img/project/keyboard.jpg"
-                class="card-img-top"
-                alt="project"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img
-                src="/bootsrap/img/project/keyboard.jpg"
-                class="card-img-top"
-                alt="project"
-              />
-              <div class="card-body">
-                <p class="card-text">
-                  ini hanya gambar biasa belum dimasukan sebuah project asli oke
-                  .. mungkin nanti nyusul.
-                </p>
-              </div>
-            </div>
-          </div>
+          <h3>Kru</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            facilis consequuntur fugit vitae sit necessitatibus, voluptatem
+            rerum dolores ea nostrum.
+          </p>
         </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,32L48,42.7C96,53,192,75,288,85.3C384,96,480,96,576,128C672,160,768,224,864,234.7C960,245,1056,203,1152,154.7C1248,107,1344,53,1392,26.7L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- akhir card -->
-
-    <!-- contact -->
-    <section id="contact">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>Contact Me</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-7">
-            <div
-              class="alert alert-success alert-dismissible fade show d-none my-alert"
-              role="alert"
+        <div class="service">
+          <div class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 640 512"
             >
-              <strong>Terimakasih!</strong> Pesan anda telah diterima
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="alert"
-                aria-label="Close"
-              ></button>
-            </div>
-            <form name="ihsan-contact-form">
-              <div class="mb-3">
-                <label for="name" class="form-label">Nama Lengkap</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  aria-describedby="name"
-                  name="nama"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email </label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  aria-describedby="email"
-                  name="email"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="pesan" class="form-label">Pesan</label>
-                <textarea
-                  class="form-control"
-                  id="pesan"
-                  rows="3"
-                  name="pesan"
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary btn-kirim">
-                Kirim
-              </button>
-
-              <button
-                class="btn btn-primary btn-loading d-none"
-                type="button"
-                disabled
-              >
-                <span
-                  class="spinner-border spinner-border-sm"
-                  role="status"
-                  aria-hidden="true"
-                ></span>
-                Loading...
-              </button>
-            </form>
+              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <style>
+                svg {
+                  fill: #ff6347;
+                }
+              </style>
+              <path
+                d="M211.8 0c7.8 0 14.3 5.7 16.7 13.2C240.8 51.9 277.1 80 320 80s79.2-28.1 91.5-66.8C413.9 5.7 420.4 0 428.2 0h12.6c22.5 0 44.2 7.9 61.5 22.3L628.5 127.4c6.6 5.5 10.7 13.5 11.4 22.1s-2.1 17.1-7.8 23.6l-56 64c-11.4 13.1-31.2 14.6-44.6 3.5L480 197.7V448c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64V197.7l-51.5 42.9c-13.3 11.1-33.1 9.6-44.6-3.5l-56-64c-5.7-6.5-8.5-15-7.8-23.6s4.8-16.6 11.4-22.1L137.7 22.3C155 7.9 176.7 0 199.2 0h12.6z"
+              />
+            </svg>
           </div>
+          <h3>T-shirt</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            facilis consequuntur fugit vitae sit necessitatibus, voluptatem
+            rerum dolores ea nostrum.
+          </p>
         </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#0d6efd"
-          fill-opacity="1"
-          d="M0,192L48,165.3C96,139,192,85,288,85.3C384,85,480,139,576,165.3C672,192,768,192,864,192C960,192,1056,192,1152,181.3C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-    </section>
-    <!-- akhir contact -->
+        <div class="service">
+          <div class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 640 512"
+            >
+              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <style>
+                svg {
+                  fill: #f87878;
+                }
+              </style>
+              <path
+                d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"
+              />
+            </svg>
+          </div>
+          <h3>Learn</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            facilis consequuntur fugit vitae sit necessitatibus, voluptatem
+            rerum dolores ea nostrum.
+          </p>
+        </div>
+      </section>
 
-    <!-- footer -->
-    <footer class="bg-primary text-white text-center pb-5">
-      <p>
-        Created with <i class="bi bi-heart-fill"></i> by
-        <a
-          href="https://www.instagram.com/ihsanabdol_/"
-          class="text-white fw-semibold"
-          >Ihsan Abdul</a
-        >
-      </p>
-    </footer>
-    <!-- akhir footer -->
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
-    ></script>
-
-    <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbyac8Y3VH1cFCtuxhSpQrW94ntF1ELizwbVFKpsMjjOwJM7YSARzaNBPeuRw-NJzL0/exec";
-      const form = document.forms["ihsan-contact-form"];
-      const btnKirim = document.querySelector(".btn-kirim");
-      const btnLoading = document.querySelector(".btn-loading");
-      const myAlert = document.querySelector(".my-alert");
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        // ketika tombol di klik
-        // tampilkan tombol loading hilangkan tombol kirim
-        btnLoading.classList.toggle("d-none");
-        btnKirim.classList.toggle("d-none");
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            // tampilkan tombol kirim hilangkan tombol loading
-            btnLoading.classList.toggle("d-none");
-            btnKirim.classList.toggle("d-none");
-            // tampilkan alert
-            myAlert.classList.toggle("d-none");
-            // reset form
-            form.reset();
-            console.log("Success!", response);
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script>
+      <section class="galery">
+        <h2>Gallery</h2>
+        <img
+          src="https://i.pinimg.com/564x/e2/4d/29/e24d29b0f16dec9f656eb4ab62fab67a.jpg"
+          alt="shirt"
+        /><img
+          src="https://i.pinimg.com/736x/96/60/d1/9660d182c5b32c41a59833a5cf970d86.jpg"
+          alt="shirt"
+        />
+        <img
+          src="https://i.pinimg.com/564x/7d/58/46/7d5846cf0f5b512a9c8fbbf786b5dbaf.jpg"
+          alt="shirt"
+        />
+        <img
+          src="https://i.pinimg.com/564x/f6/b7/6c/f6b76c0caee75f9f418192d8675ad83d.jpg"
+          alt="shirt"
+        />
+        <img
+          src="https://i.pinimg.com/564x/f6/ea/e2/f6eae20880b2d9dff2d75ed9fcff60b8.jpg"
+          alt="shirt"
+        />
+        <img
+          src="https://i.pinimg.com/564x/4f/d8/8e/4fd88e61bf01191c152b386a2c712e4a.jpg"
+          alt="shirt"
+        />
+      </section>
+    </div>
   </body>
 </html>
