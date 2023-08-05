@@ -1,0 +1,29 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+header {
+  display: grid;
+  grid-template: "main" 400px;
+}
+
+.hero {
+  background-image: url(https://i.pinimg.com/564x/14/20/b6/1420b6b7946a9812009a51a561d0409e.jpg);
+}
+
+/* responsive */
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 600px) {
+}
