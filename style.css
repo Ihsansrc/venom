@@ -29,5 +29,17 @@ header .hero {
 .hero {
   display: flex;
   flex-direction: column;
-  place-content: start center;
+  justify-content: center;
+  align-items: start;
+}
+
+.hero > * {
+  display: none;
+}
+
+header .feature {
+}
+
+header .picture-1 {
+  background-image: url(https://i.pinimg.com/564x/c9/a6/58/c9a658b7b88a8c4a9d4862e7978552ce.jpg);
 }
