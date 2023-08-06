@@ -74,12 +74,14 @@ header .hero {
 .navigasi .brand {
   font-size: 2em;
   font-weight: 700;
+  margin-left: 10px;
 }
 
 .navigasi ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   list-style-type: none;
+  gap: 8px;
 }
 
 .navigasi li a {
@@ -89,5 +91,8 @@ header .hero {
   font-size: 0.9em;
   background-color: white;
   color: #7eaa92;
-  padding: 10px;
+  padding: 7px;
+  display: block;
+  text-align: center;
+  border-radius: 10px;
 }
