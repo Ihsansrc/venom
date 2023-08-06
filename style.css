@@ -46,7 +46,8 @@ header .hero {
 }
 
 .feature .price {
-  font-size: 30px;
+  font-size: 1.5em;
+  font-weight: 700;
 }
 
 .picture-1 {
@@ -65,5 +66,25 @@ header .hero {
 
 .navigasi {
   display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
   order: -1;
+}
+
+.navigasi .brand {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.navigasi ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  list-style-type: none;
+}
+
+.navigasi li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 0.9em;
 }
