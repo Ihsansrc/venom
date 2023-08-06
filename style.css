@@ -2,12 +2,12 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #7eaa92;
 }
 
 body {
   font-family: sans-serif;
   color: white;
+  background-color: #7eaa92;
 }
 
 header {
@@ -37,13 +37,28 @@ header .hero {
   display: none;
 }
 
-header .feature {
+.feature {
   display: grid;
   place-content: center;
+  cursor: pointer;
+  background-color: black;
+  text-shadow: 0 0 0.5px black;
 }
 
-header .picture-1 {
+.feature .price {
+  font-size: 30px;
+}
+
+.picture-1 {
+  grid-area: picture-1;
   background-image: url(https://i.pinimg.com/564x/c9/a6/58/c9a658b7b88a8c4a9d4862e7978552ce.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.picture-2 {
+  grid-area: picture-2;
+  background-image: url(https://i.pinimg.com/564x/7f/ee/af/7feeaf31b19382977d0e38fa01ca395c.jpg);
   background-position: center;
   background-size: cover;
 }
