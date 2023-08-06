@@ -1,0 +1,33 @@
+body {
+  font-family: sans-serif;
+  background-color: salmon;
+}
+
+.container {
+  border: 3px solid black;
+  width: 70%;
+  margin: auto;
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px black;
+}
+
+.container h3 {
+  text-transform: uppercase;
+  color: slategray;
+}
+
+.container label {
+  font-weight: 600;
+}
+
+textarea::placeholder {
+  color: brown;
+  font-weight: 800;
+  font-size: 40px;
+}
+
+
+.container
