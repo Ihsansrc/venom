@@ -16,3 +16,8 @@ header {
     "hero hero picture-1"
     "hero hero picture-2";
 }
+
+header .hero {
+  background-image: url(https://i.pinimg.com/564x/11/cc/1e/11cc1e2bfe34f633103a0d590e13b0b3.jpg);
+  min-height: 100%;
+}
