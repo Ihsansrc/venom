@@ -87,4 +87,7 @@ header .hero {
   color: white;
   font-weight: 600;
   font-size: 0.9em;
+  background-color: white;
+  color: #7eaa92;
+  padding: 10px;
 }
