@@ -18,6 +18,8 @@ header {
 }
 
 header .hero {
-  background-image: url(https://i.pinimg.com/564x/11/cc/1e/11cc1e2bfe34f633103a0d590e13b0b3.jpg);
-  min-height: 100%;
+  grid-area: hero;
+  background-image: url(https://i.pinimg.com/564x/b4/7c/9e/b47c9ee3ed85047678923c703b9f5997.jpg);
+  min-height: 300px;
+  background-position: center;
 }
