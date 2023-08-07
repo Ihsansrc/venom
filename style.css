@@ -69,7 +69,7 @@ header .hero {
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
-  order: -1;
+  margin-top: 20px;
 }
 
 .navigasi .brand {
@@ -164,4 +164,25 @@ header .hero {
 .judul a {
   text-decoration: none;
   color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .navigasi {
+    order: inherit;
+    grid-template-columns: 1fr;
+  }
+
+  .navigasi .brand {
+    display: none;
+  }
+
+  .hero > * {
+    display: block;
+    padding: 15px;
+    background-color: rgba(126, 170, 146, 0.7);
+    line-height: 10px;
+  }
+  .hero p {
+    font-weight: 600;
+  }
 }
