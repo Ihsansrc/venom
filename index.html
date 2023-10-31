@@ -4,121 +4,394 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    <div class="container">
-      <header>
-        <div class="hero">
-          <h1>KONEMI</h1>
-          <p>コンミ</p>
-        </div>
-        <div class="feature picture-1">
-          <h3 class="price">IDR 150k</h3>
-          <p>HOODIE</p>
-        </div>
-        <div class="feature picture-2">
-          <h3 class="price">IDR 200k</h3>
-          <p>MERCH</p>
-        </div>
-      </header>
+  <body class="bg-slate-100">
+    <!-- belajar canvas -->
+    <!-- <canvas id="myCanvas"></canvas>
+    <canvas id="animasi"></canvas> -->
 
-      <!-- navigasi -->
-      <nav class="navigasi">
-        <div class="brand">NIKE</div>
-        <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#hoodie">HOODIE</a></li>
-          <li><a href="#sepatu">SHOES</a></li>
-          <li><a href="">BASKET</a></li>
-        </ul>
+    <div class="container w-full">
+      <!-- navbar -->
+      <nav class="w-full flex justify-between px-4 py-4 bg-white">
+        <div class="flex w-[50%] justify-around">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 448 512"
+            class="self-center text-slate-800 fill-current"
+          >
+            <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+
+            <path
+              d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+            />
+          </svg>
+
+          <h1 class="font-bold">Eatlah, Kemang</h1>
+        </div>
+        <div>
+          <div class="w-6 h-6 bg-orange-400 rounded-full flex te">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 512 512"
+              class="mx-auto self-center text-white fill-current"
+            >
+              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+
+              <path
+                d="M313.4 32.9c26 5.2 42.9 30.5 37.7 56.5l-2.3 11.4c-5.3 26.7-15.1 52.1-28.8 75.2H464c26.5 0 48 21.5 48 48c0 18.5-10.5 34.6-25.9 42.6C497 275.4 504 288.9 504 304c0 23.4-16.8 42.9-38.9 47.1c4.4 7.3 6.9 15.8 6.9 24.9c0 21.3-13.9 39.4-33.1 45.6c.7 3.3 1.1 6.8 1.1 10.4c0 26.5-21.5 48-48 48H294.5c-19 0-37.5-5.6-53.3-16.1l-38.5-25.7C176 420.4 160 390.4 160 358.3V320 272 247.1c0-29.2 13.3-56.7 36-75l7.4-5.9c26.5-21.2 44.6-51 51.2-84.2l2.3-11.4c5.2-26 30.5-42.9 56.5-37.7zM32 192H96c17.7 0 32 14.3 32 32V448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V224c0-17.7 14.3-32 32-32z"
+              />
+            </svg>
+          </div>
+        </div>
       </nav>
+      <!-- akhir navbar -->
 
-      <!-- services -->
-      <section class="services">
-        <div class="service">
-          <div class="icon"></div>
-          <h3>NIKE</h3>
-          <p>
-            didirikan pada tanggal 25 Januari 1964 sebagai Blue Ribbon Sports
-            oleh Bill Bowerman dan Phil Knight. Nama Nike resmi dipakai sejak 30
-            Mei 1978. Nama Nike sendiri berarti dewi kemenangan Yunani.
-            Perusahaan ini awalnya beroperasi sebagai distributor sepatu
-            Onitsuka Tiger (sekarang ASICS) asal Jepang.
-          </p>
+      <!-- lokasi -->
+      <section id="lokasi" class="py-4 px-4 bg-white">
+        <div class="w-full flex justify-between flex-wrap">
+          <div class="flex flex-wrap justify-around">
+            <div
+              class="w-10 h-10 rounded-full bg-sky-400 self-center mr-3"
+            ></div>
+            <div>
+              <h1 class="font-bold text-sm">Pesan Antar</h1>
+              <p class="font-light text-sm">Diantar dalam 20 menit</p>
+            </div>
+          </div>
+          <div id="ganti" class="self-center cursor-pointer">
+            <div
+              class="rounded-2xl px-3 border-2 border-solid border-green-600"
+            >
+              <h1 class="text-green-600 font-bold text-[15px]">Ganti</h1>
+            </div>
+          </div>
         </div>
-        <div class="service">
-          <div class="icon"></div>
-          <h3>HOODIE</h3>
-          <p>
-            Hoodie pertama kali dikenal pada awal abad ke-12 di Inggris yang
-            kemungkinan besar di bawa dari Norman yang dulunya merupakan jajahan
-            Inggris. Dalam perkembangannya, hoodie juga sampai ke daratan
-            Amerika Serikat dan brand pertama yang memproduksi outwear ini
-            adalah Champion sekitar tahun 1930-an.
-          </p>
-        </div>
+        <div class="border-1 border-slate-200 border w-full my-3"></div>
+        <div>
+          <p class="text-[12px] font-semibold">Alamat Pengantar</p>
+          <h2 class="font-bold text-lg">Rumah</h2>
+          <p class="jalan text-[13px]"></p>
+          <div class="flex mt-3 relative w-full">
+            <div
+              id="alamat"
+              class="border rounded-full mr-5 border-slate-300 flex px-2 py-1 cursor-pointer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height=".8em"
+                viewBox="0 0 512 512"
+                class="self-center mr-2"
+              >
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"
+                />
+              </svg>
+              <a href="#" class="font-semibold text-sm">Ganti alamat</a>
+            </div>
+            <div
+              id="ubah-catatan"
+              class="border rounded-full border-slate-300 flex px-2 py-1 cursor-pointer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height=".8em"
+                viewBox="0 0 512 512"
+                class="self-center mr-2"
+              >
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M96 352V96c0-35.3 28.7-64 64-64H416c35.3 0 64 28.7 64 64V293.5c0 17-6.7 33.3-18.7 45.3l-58.5 58.5c-12 12-28.3 18.7-45.3 18.7H160c-35.3 0-64-28.7-64-64zM272 128c-8.8 0-16 7.2-16 16v48H208c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h48v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V256h48c8.8 0 16-7.2 16-16V208c0-8.8-7.2-16-16-16H320V144c0-8.8-7.2-16-16-16H272zm24 336c13.3 0 24 10.7 24 24s-10.7 24-24 24H136C60.9 512 0 451.1 0 376V152c0-13.3 10.7-24 24-24s24 10.7 24 24l0 224c0 48.6 39.4 88 88 88H296z"
+                />
+              </svg>
+              <p class="font-semibold text-sm">Ubah catatan</p>
+            </div>
+            <!-- tab baru untuk catatan -->
+            <div
+              id="click-catatan"
+              class="click-catatan hidden fixed top-72 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-full rounded-2xl"
+            >
+              <div class="bg-white rounded-2xl overflow-hidden">
+                <div
+                  class="border-[3px] border-slate-300 rounded-lg w-12 my-3 mx-auto"
+                ></div>
+                <h1 class="font-semibold text-center pb-4">
+                  Silahkan tuliskan pesanan anda
+                </h1>
+                <textarea
+                  name="pesan"
+                  id="pesan"
+                  cols="30"
+                  rows="5"
+                  placeholder="ketik pesanan anda.."
+                  class="w-full rounded-lg outline-none px-3 bg-slate-50"
+                ></textarea>
+                <div class="w-full flex py-4">
+                  <button
+                    id="Kirim"
+                    type="submit"
+                    class="text-center mx-auto bg-green-600 text-white font-semibold px-20 rounded-xl"
+                  >
+                    Kirim
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <div class="service">
-          <div class="icon"></div>
-          <h3>SHOES</h3>
-          <p>
-            Para ahli memperkirakan konsep sepatu pertama kali muncul pada zaman
-            es atau sekitar lima juta tahun lalu. Sepatu primitif banyak pernah
-            teridentifikasi di pedalaman Missouri, Amerika Serikat dalam jumlah
-            banyak. Perkiraannya sepatu tersebut berasal dari 8000 Sebelum
-            Masehi (SM).
-          </p>
+          <!-- tab baru ganti alamat -->
+          <section id="ganti-alamat" class="py-4">
+            <label for="alamat" class="w-full">
+              <input
+                type="text"
+                class="w-full bg-slate-100 rounded-md px-3 h-20 focus:outline-green-600"
+                placeholder="masukan alamat anda"
+              />
+              <button
+                type="submit"
+                id="kirim-alamat"
+                class="bg-green-600 w-full rounded-md mt-3 text-white font-semibold transition ease-in-out hover:bg-green-500"
+              >
+                kirim
+              </button>
+            </label>
+          </section>
+          <!-- akhir ganti alamat -->
+        </div>
+      </section>
+      <!-- akhir lokasi -->
+
+      <!-- card makanan -->
+
+      <section id="list-makan" class="py-4 px-4 bg-white mt-2">
+        <div id="keluar" class="w-full flex justify-between">
+          <div class="basis-1/2">
+            <h1 class="font-bold">Beef in black</h1>
+            <p class="text-sm font-light">20.000</p>
+            <p class="text-xs font-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+              sunt.
+            </p>
+          </div>
+          <div class="bg-slate-100 w-20 h-20 rounded-xl cursor-pointer"></div>
+        </div>
+        <!-- bungkus catatan dan tambah kurang -->
+        <div class="w-full flex justify-between mt-4">
+          <div
+            id="catatan"
+            class="flex border rounded-full border-slate-300 px-2 py-1 cursor-pointer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height=".8em"
+              viewBox="0 0 512 512"
+              class="self-center mr-1"
+            >
+              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M96 352V96c0-35.3 28.7-64 64-64H416c35.3 0 64 28.7 64 64V293.5c0 17-6.7 33.3-18.7 45.3l-58.5 58.5c-12 12-28.3 18.7-45.3 18.7H160c-35.3 0-64-28.7-64-64zM272 128c-8.8 0-16 7.2-16 16v48H208c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h48v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V256h48c8.8 0 16-7.2 16-16V208c0-8.8-7.2-16-16-16H320V144c0-8.8-7.2-16-16-16H272zm24 336c13.3 0 24 10.7 24 24s-10.7 24-24 24H136C60.9 512 0 451.1 0 376V152c0-13.3 10.7-24 24-24s24 10.7 24 24l0 224c0 48.6 39.4 88 88 88H296z"
+              />
+            </svg>
+            <h1 class="font-bold self-center text-sm">catatan</h1>
+          </div>
+
+          <!-- tambah kurang -->
+
+          <div class="flex justify-between self-center w-20">
+            <div
+              id="berkurang"
+              class="border-2 h-6 self-center rounded-full w-6 flex border-green-600 cursor-pointer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height=".9em"
+                viewBox="0 0 448 512"
+                class="text-green-600 fill-current self-center mx-auto"
+                for="berkurang"
+              >
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"
+                />
+              </svg>
+            </div>
+            <span id="jumlah">0</span>
+            <div
+              id="bertambah"
+              class="border-2 rounded-full w-6 h-6 border-green-600 flex cursor-pointer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height=".9em"
+                viewBox="0 0 448 512"
+                class="text-green-600 fill-current self-center mx-auto"
+                for="bertambah"
+              >
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+
+                <path
+                  d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="list-makan" class="py-4 px-4 bg-white mt-2">
+        <div id="keluar" class="w-full flex justify-between">
+          <div class="basis-1/2">
+            <h1 class="font-bold">Beef in black</h1>
+            <p class="text-sm font-light">20.000</p>
+            <p class="text-xs font-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+              sunt.
+            </p>
+          </div>
+          <div class="bg-slate-100 w-20 h-20 rounded-xl cursor-pointer"></div>
+        </div>
+        <!-- bungkus catatan dan tambah kurang -->
+        <div class="w-full flex justify-between mt-4">
+          <div
+            id="catatan"
+            class="flex border rounded-full border-slate-300 px-2 py-1 cursor-pointer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height=".8em"
+              viewBox="0 0 512 512"
+              class="self-center mr-1"
+            >
+              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M96 352V96c0-35.3 28.7-64 64-64H416c35.3 0 64 28.7 64 64V293.5c0 17-6.7 33.3-18.7 45.3l-58.5 58.5c-12 12-28.3 18.7-45.3 18.7H160c-35.3 0-64-28.7-64-64zM272 128c-8.8 0-16 7.2-16 16v48H208c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h48v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V256h48c8.8 0 16-7.2 16-16V208c0-8.8-7.2-16-16-16H320V144c0-8.8-7.2-16-16-16H272zm24 336c13.3 0 24 10.7 24 24s-10.7 24-24 24H136C60.9 512 0 451.1 0 376V152c0-13.3 10.7-24 24-24s24 10.7 24 24l0 224c0 48.6 39.4 88 88 88H296z"
+              />
+            </svg>
+            <h1 class="font-bold self-center text-sm">catatan</h1>
+          </div>
+
+          <!-- tambah kurang -->
+
+          <div class="flex justify-between self-center w-20">
+            <div
+              id="berkurang"
+              class="border-2 h-6 self-center rounded-full w-6 flex border-green-600 cursor-pointer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height=".9em"
+                viewBox="0 0 448 512"
+                class="text-green-600 fill-current self-center mx-auto"
+                for="berkurang"
+              >
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"
+                />
+              </svg>
+            </div>
+            <span id="jumlah">0</span>
+            <div
+              id="bertambah"
+              class="border-2 rounded-full w-6 h-6 border-green-600 flex cursor-pointer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height=".9em"
+                viewBox="0 0 448 512"
+                class="text-green-600 fill-current self-center mx-auto"
+                for="bertambah"
+              >
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+
+                <path
+                  d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="list-makan" class="py-4 px-4 bg-white mt-2">
+        <div id="keluar" class="w-full flex justify-between">
+          <div class="basis-1/2">
+            <h1 class="font-bold">Beef in black</h1>
+            <p class="text-sm font-light">20.000</p>
+            <p class="text-xs font-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+              sunt.
+            </p>
+          </div>
+          <div class="bg-slate-100 w-20 h-20 rounded-xl cursor-pointer"></div>
+        </div>
+        <!-- bungkus catatan dan tambah kurang -->
+        <div class="w-full flex justify-between mt-4">
+          <div
+            id="catatan"
+            class="flex border rounded-full border-slate-300 px-2 py-1 cursor-pointer"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height=".8em"
+              viewBox="0 0 512 512"
+              class="self-center mr-1"
+            >
+              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path
+                d="M96 352V96c0-35.3 28.7-64 64-64H416c35.3 0 64 28.7 64 64V293.5c0 17-6.7 33.3-18.7 45.3l-58.5 58.5c-12 12-28.3 18.7-45.3 18.7H160c-35.3 0-64-28.7-64-64zM272 128c-8.8 0-16 7.2-16 16v48H208c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h48v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V256h48c8.8 0 16-7.2 16-16V208c0-8.8-7.2-16-16-16H320V144c0-8.8-7.2-16-16-16H272zm24 336c13.3 0 24 10.7 24 24s-10.7 24-24 24H136C60.9 512 0 451.1 0 376V152c0-13.3 10.7-24 24-24s24 10.7 24 24l0 224c0 48.6 39.4 88 88 88H296z"
+              />
+            </svg>
+            <h1 class="font-bold self-center text-sm">catatan</h1>
+          </div>
+
+          <!-- tambah kurang -->
+
+          <div class="flex justify-between self-center w-20">
+            <div
+              id="berkurang"
+              class="border-2 h-6 self-center rounded-full w-6 flex border-green-600 cursor-pointer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height=".9em"
+                viewBox="0 0 448 512"
+                class="text-green-600 fill-current self-center mx-auto"
+                for="berkurang"
+              >
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"
+                />
+              </svg>
+            </div>
+            <span id="jumlah">0</span>
+            <div
+              id="bertambah"
+              class="border-2 rounded-full w-6 h-6 border-green-600 flex cursor-pointer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height=".9em"
+                viewBox="0 0 448 512"
+                class="text-green-600 fill-current self-center mx-auto"
+                for="bertambah"
+              >
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+
+                <path
+                  d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
       </section>
 
-      <!-- Hoodie -->
-      <section class="hoodie" id="hoodie">
-        <div class="judul">
-          <h3>Paling populer</h3>
-          <a href="#">see more...</a>
-        </div>
-        <img
-          src="https://i.pinimg.com/236x/9f/d3/89/9fd389eb5d78dd8bbff170a12717152c.jpg"
-          alt="hoodie"
-        />
-        <img
-          src="https://i.pinimg.com/236x/1e/ba/19/1eba19fb46936da6ba6afea236f158f9.jpg"
-          alt="hoodie"
-        />
-        <img
-          src="https://i.pinimg.com/236x/c6/84/ec/c684ec397f8332a2ecec1e607c88e381.jpg"
-          alt="hoodie"
-        />
-        <img
-          src="https://i.pinimg.com/236x/b4/2b/43/b42b43289c43c05b96e8999ded289300.jpg"
-          alt="hoodie"
-        />
-      </section>
-
-      <!-- sepatu -->
-      <section class="sepatu" id="sepatu">
-        <div class="judul">
-          <h3>Paling populer</h3>
-          <a href="#">see more...</a>
-        </div>
-        <img
-          src="https://i.pinimg.com/236x/df/ab/cc/dfabcc7fbd8690d7347e568e4b62cd20.jpg"
-          alt="sepatu"
-        />
-        <img
-          src="https://i.pinimg.com/564x/54/ea/71/54ea717e6769d34af6a2ad94e9e662db.jpg"
-          alt="Sepatu"
-        />
-        <img
-          src="https://i.pinimg.com/236x/85/00/c3/8500c36fa24e8a53d7610b156104a474.jpg"
-          alt="sepatu"
-        />
-        <img
-          src="https://i.pinimg.com/236x/7d/8c/eb/7d8ceb9c6797fcc11f425016dd81b6d6.jpg"
-          alt="sepatu"
-        />
-      </section>
+      <!-- akhir card makan -->
     </div>
+
+    <script src="latihan/latiham.js"></script>
   </body>
 </html>

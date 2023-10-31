@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+body {
+  background-color: rgb(91, 189, 156);
+}
+
+.container {
+  width: 350px;
+  height: 500px;
+  background-color: white;
+  margin: 40px auto;
+  border-radius: 30px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+form {
+  width: 100%;
+  height: 120px;
+  margin: auto;
+}
+
+input {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: none;
+  text-align: right;
+  font-size: 50px;
+  padding-right: 10px;
+  box-shadow: inset 0 0 10px rgba(110, 109, 109, 0.4);
+  color: rgb(97, 97, 97);
+}
+
+input:focus {
+  outline: none;
+}
+
+.bungkus {
+  display: flex;
+  margin-top: 25px;
+}
+
+.kiri {
+  border: 2px solid saddlebrown;
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.tombol {
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+}
+
+.kanan {
+  background-color: cornflowerblue;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.calculator {
+  text-align: center;
+}
+
+.buttons button {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  font-size: 20px;
+}
+
+.coba {
+  margin: auto;
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.tcoba {
+  width: 60px;
+  height: 60px;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  font-size: 20px;
+}
